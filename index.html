@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Jan Kenneth Cabonilas | Web Developer &amp; Virtual Assistant</title>
+<meta name="description" content="Jan Kenneth Cabonilas is a freelance web developer and virtual assistant from Pagadian City, Philippines, offering website development, virtual assistance, graphic design and social media management.">
+<meta name="theme-color" content="#0b1426">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Jan Kenneth Cabonilas | Web Developer & Virtual Assistant">
+<meta property="og:description" content="Where Creativity Meets Technology. Freelance web development, virtual assistance, design and social media.">
+<meta property="og:image" content="assets/og-image.jpg"><!-- Add a 1200x630 image at assets/og-image.jpg -->
+<link rel="icon" type="image/png" href="assets/favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<script>try{var t=localStorage.getItem('theme');if(t)document.documentElement.dataset.theme=t}catch(e){}</script>
+</head>
+<body>
+<div class="progress" id="progress" aria-hidden="true"></div>
+<a class="skip" href="#main">Skip to content</a>
+<header class="nav" id="nav">
+  <div class="container nav-in">
+    <a href="#home" class="brand">Jan Kenneth Cabonilas</a>
+    <nav aria-label="Main"><ul id="menu" class="menu">
+      <li><a href="#home">Home</a></li><li><a href="#about">About</a></li><li><a href="#services">Services</a></li><li><a href="#skills">Skills</a></li><li><a href="#projects">Projects</a></li><li><a href="#credentials">Credentials</a></li><li><a href="#contact">Contact</a></li>
+    </ul></nav>
+    <div class="nav-actions">
+      <button id="themeBtn" class="icon-btn" aria-label="Switch to light mode" type="button"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg></button>
+      <button id="menuBtn" class="icon-btn menu-btn" aria-label="Open menu" aria-expanded="false" aria-controls="menu" type="button"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+<section id="home" class="hero">
+  <div class="container hero-grid">
+    <div class="hero-text">
+      <p class="status"><span class="dot"></span>Open to freelance work and employment opportunities.</p>
+      <h1>Jan Kenneth Cabonilas</h1>
+      <p class="role">Web Developer | Virtual Assistant</p>
+      <p class="tagline">Where Creativity Meets Technology.</p>
+      <p class="lead">I build clean websites and support small businesses, creators and teams with design, social media and day-to-day admin work, from Pagadian City, Philippines.</p>
+      <div class="btns">
+        <a class="btn primary" href="#projects">View my projects</a>
+        <a class="btn" href="#services">View my services</a>
+        <a class="btn" href="#contact">Contact me</a>
+        <a class="btn ghost" id="cvBtn" href="assets/Jan-Kenneth-Cabonilas-CV.pdf" download>Download my CV</a>
+      </div>
+      <p id="cvNote" class="note" role="status" hidden>My CV will be available soon. Email me and I'll send it directly.</p>
+    </div>
+    <figure class="photo">
+      <img src="assets/profile-photo.jpg" alt="Portrait of Jan Kenneth Cabonilas in a black suit" width="480" height="640" fetchpriority="high">
+      <figcaption>Pagadian City, Philippines</figcaption>
+    </figure>
+  </div>
+</section>
+
+<section id="about" class="section">
+  <div class="container split">
+    <div><h2>About me</h2></div>
+    <div class="prose">
+      <p>I'm a creative and detail-oriented graphic artist and social media manager pursuing a Bachelor of Science in Computer Science at Saint Columban College. I combine visual design with clear communication, content planning and technical skills.</p>
+      <p>I create branded graphics, social media content and polished presentation decks. Competitive debate trained me in persuasive writing and public speaking, which helps me explain ideas clearly to clients and teammates.</p>
+      <p>I work as a freelancer, and I'm open to remote, part-time and project-based work.</p>
+      <ul class="chips"><li>Design</li><li>Web development</li><li>Virtual assistance</li><li>Social media</li><li>Communication</li><li>Problem-solving</li></ul>
+    </div>
+  </div>
+</section>
+
+<section id="services" class="section alt">
+  <div class="container"><h2>Services</h2><p class="lead">What I can help you with.</p>
+  <div class="grid g3" id="servicesGrid"></div></div>
+</section>
+
+<section id="skills" class="section">
+  <div class="container"><h2>Skills and tools</h2><p class="lead">My level is intermediate in most areas. Select a category to explore.</p>
+  <div class="tabs" role="tablist" id="skillTabs" aria-label="Skill categories"></div>
+  <div id="skillPanel" class="panel" role="tabpanel" tabindex="0"></div>
+  <h3 class="sub">Tools and software</h3>
+  <div class="grid g4" id="toolsGrid"></div></div>
+</section>
+
+<section id="projects" class="section alt">
+  <div class="container"><h2>Projects</h2><p class="lead">Academic, personal and in-development work. Statuses, screenshots and links are added as projects are confirmed.</p>
+  <div class="tabs" id="projectFilters" role="group" aria-label="Filter projects"></div>
+  <div class="grid g2" id="projectsGrid"></div></div>
+</section>
+
+<section id="credentials" class="section">
+  <div class="container"><h2>Education and credentials</h2>
+  <div class="grid g3">
+    <article class="card"><h3>Saint Columban College</h3><p>Bachelor of Science in Computer Science</p><span class="badge">In progress</span></article>
+    <article class="card"><h3>Data Analysis with Python</h3><p>Google</p><div id="certMeta" class="meta"></div></article>
+    <article class="card"><h3>With Honors</h3><p>Academic achievement</p></article>
+  </div></div>
+</section>
+
+<section id="contact" class="section contact">
+  <div class="container">
+    <h2>Let's work together</h2>
+    <p class="lead">Have a project, a role or a question? Reach out by email or on any platform below. I'm open to freelance work and employment opportunities.</p>
+    <ul class="contact-list" id="contactList"></ul>
+  </div>
+</section>
+</main>
+
+<footer class="footer"><div class="container foot">
+  <div><strong>Jan Kenneth Cabonilas</strong><p>Web Developer | Virtual Assistant</p><p>Thanks for visiting. I'd love to hear about your project.</p></div>
+  <nav aria-label="Footer"><ul class="flinks"><li><a href="#home">Home</a></li><li><a href="#about">About</a></li><li><a href="#services">Services</a></li><li><a href="#skills">Skills</a></li><li><a href="#projects">Projects</a></li><li><a href="#credentials">Credentials</a></li><li><a href="#contact">Contact</a></li></ul>
+  <ul class="flinks" id="footSocial"></ul></nav>
+  <p class="copy">&copy; <span id="year">2026</span> Jan Kenneth Cabonilas. All rights reserved.</p>
+</div></footer>
+
+<button id="toTop" class="to-top" type="button" aria-label="Back to top" hidden>&uarr;</button>
+<div id="toast" class="toast" role="status" aria-live="polite"></div>
+<dialog id="modal" aria-labelledby="mTitle"><div class="m-in"><button class="icon-btn m-close" id="mClose" aria-label="Close details" type="button">&times;</button><div id="mBody"></div></div></dialog>
+<script src="script.js"></script>
+</body>
+</html>
